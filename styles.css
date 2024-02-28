@@ -1,0 +1,296 @@
+html{
+    background-color:rgba(122, 191, 191, .5);
+}
+
+
+body {
+    width: 414px;
+    background-color: #F2F2F2;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: #F2F2F2;
+    position: relative;
+    top: 200px;
+}
+
+header menu {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    width: 414px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    right: 50px;
+    justify-items: center;
+    list-style: none;
+    position: relative;
+    bottom: 50px;
+    padding-top: 15px;
+    top: -30px;
+}
+
+header menu a {
+    text-decoration: none;
+    text-align: center;
+    color: #EB5428;
+}
+
+menu ul {
+  list-style: none;
+}
+
+
+
+
+h1 {
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    padding: 25px;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+nav a, nav span, menu li, #social li {
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+}
+
+p, dd, li, nav, input {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    
+}
+
+dt {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+dd {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+dl {
+    margin: 0;
+}
+
+.details dl {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    gap: 15px;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    margin: 10px;
+}
+
+main {
+    margin: 10px;
+}
+
+#search {
+    display: flex;
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    z-index: 0;
+}
+
+#search button{
+    width: 40px;
+    height: 40px;
+}
+
+#search svg {
+    position: absolute;
+    left: 185px;
+    top: 0;
+}
+
+
+input {
+    border-color: #EB5428;
+    height: 40px;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+    background-color: #ffffff;
+    width: 414px;
+}
+
+nav ul {
+    width: 80px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease-in-out;
+    margin-top: 60px;
+    margin-left: 18px;
+    z-index: 2;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    background-color: #ffffff;
+    list-style: none;  
+}
+
+nav img{
+    width: 100%;
+}
+
+nav ul li {
+    line-height: 1.5;
+}
+
+nav ul li a {
+    padding-left: 3px;
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: rgb(213, 209, 209);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+input:checked ~ ul {
+    max-height: 800px;
+    margin: 10px;
+}
+
+nav input {
+    display: none;    
+}
+
+label {
+    display: grid;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+
+label:before {
+    top: 5px;
+}
+
+label:after {
+    top: -5px;
+}
+
+nav h2 {
+    visibility: hidden;
+}
+
+li#home {
+    position: absolute;
+    top: 0;
+    left: 23%;
+    background-color: #EB5428;
+    padding: 10px 80px 10px;
+    overflow: unset;
+    height: 80px;
+}
+
+#avatar {
+    position: absolute;
+    left: 340px;
+    top: 20px;
+}
+
+#avatar span {
+    color: black;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #ffffff;
+}
+
+footer p {
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+}
+
+footer h2, footer h3 {
+    visibility: hidden;
+}
+
+footer ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: #EB5428;
+    margin-right: 30px;
+    text-align: center;
+}
+
+footer section p {
+    text-align: center;
+}
+
+footer section img {
+    width: 50%;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+#social li a, menu li a, #food li a {
+    text-decoration: none;
+    color: #EB5428;
+    list-style: none;
+}
+
+#social li, menu li, #food li {
+    list-style: none;
+}
+
+#sides {
+    background-color: #7ABFBF;
+    padding-top: 2px;
+}
+
+#sides h3 {
+    text-align: left;
+}
+
+figure img {
+    width: 50%;
+}
